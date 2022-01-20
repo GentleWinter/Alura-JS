@@ -2,7 +2,7 @@ class Cliente{
     nome;
     cpf;
 }
-
+const saldo1;
 class ContaCorrente{
     agencia;
     _saldo = 0;
