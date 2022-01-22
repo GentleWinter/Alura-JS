@@ -6,4 +6,14 @@ export class ContaPoupanca extends Conta{
         super(agencia, cliente);
         ContaPoupanca.numeroContasPoupancas += 1;
     }
+
+    sacar(valor){
+        let taxa = 0.2;
+        const valorSacado = valor - (taxa * valor);
+        if(this._saldo >= valorSacado){
+            this._saldo -= valorSacado;
+            return valorSacado;
+        }
+    }
+
 }
