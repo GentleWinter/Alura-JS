@@ -1,4 +1,5 @@
 import { Cliente } from "./Cliente.js";
+import { Conta } from "./Conta.js";
 import { ContaCorrente } from "./ContaCorrente.js";
 import { ContaPoupanca } from "./ContaPoupanca.js";
 
@@ -20,4 +21,6 @@ console.log(`Valor Sacado: `, valorSacado);
 console.log(cliente1.nome, contaCorrenteRicardo);
 console.log(cliente2.nome, contaCorrenteAmara);
 console.log(cliente3.nome, contaPoupancaRodrigo);
-console.log(`Numero de contas cadastradas: `,ContaCorrente.numeroDeContas);
+console.log(`Numero de contas cadastradas: `,Conta.numeroDeContas);
+console.log(`Numero de contas correntes: `,ContaCorrente.numeroContasCorrentes);
+console.log(`Numero de contas poupancas: `,ContaPoupanca.numeroContasPoupancas);
