@@ -1,0 +1,20 @@
+{
+  "name": "alura-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GentleWinter/Alura-JS.git"
+  },
+  "author": "GentleWinter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GentleWinter/Alura-JS/issues"
+  },
+  "homepage": "https://github.com/GentleWinter/Alura-JS#readme",
+  "type": "module"
+}
