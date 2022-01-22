@@ -1,6 +1,12 @@
 export class ContaCorrente{
     agencia;
-    cliente;
+    _cliente;
+
+    set Cliente(novoValor){
+        if(novoValor instanceof Cliente){
+            this._cliente = novoValor;
+        }
+    }
 
 
     _saldo = 0;
