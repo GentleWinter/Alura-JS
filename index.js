@@ -23,6 +23,8 @@ contaCorrenteAmara.cliente = cliente2;
 contaCorrenteAmara.depositar(500);
 const valorSacado = contaCorrenteAmara.sacar(50);
 
+contaCorrenteAmara.transferir(100, contaCorrenteRicardo);
+
 console.log(valorSacado);
 
 console.log(cliente1.nome, contaCorrenteRicardo);
