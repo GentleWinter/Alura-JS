@@ -12,11 +12,9 @@ const contaCorrenteAmara = new ContaCorrente(1001, cliente2);
 const contaPoupancaRodrigo = new ContaPoupanca(1003, cliente3);
 
 contaCorrenteAmara.depositar(500);
-const valorSacado = contaCorrenteAmara.sacar(50);
+contaCorrenteAmara.sacar(50);
 
 contaCorrenteAmara.transferir(100, contaCorrenteRicardo);
-
-console.log(`Valor Sacado: `, valorSacado);
 
 console.log(cliente1.nome, contaCorrenteRicardo);
 console.log(cliente2.nome, contaCorrenteAmara);

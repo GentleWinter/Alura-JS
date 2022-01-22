@@ -22,11 +22,11 @@ export class Conta{
         Conta.numeroDeContas += 1;
     }
 
-    sacar(valor){
-        let taxa = 1;
-        const valorSacado = taxa * valor;
+    _sacar(valor, taxa){
+        taxa = 1;
+        const valorSacado = valor;
         if(this._saldo >= valorSacado){
-            this._saldo -= valorSacado;
+            this._saldo -= valorSacado * taxa;
             return valorSacado;
         }
     }
@@ -41,7 +41,7 @@ export class Conta{
     }
 
     transferir(valor, conta){
-        const valorSacado = this.sacar(valor);
-        conta.depositar(valorSacado);
+        const valorTransferido = this.sacar(valor);
+        conta.depositar(valorTransferido);
     }
 }

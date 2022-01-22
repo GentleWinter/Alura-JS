@@ -7,13 +7,9 @@ export class ContaPoupanca extends Conta{
         ContaPoupanca.numeroContasPoupancas += 1;
     }
 
-    sacar(valor){
-        let taxa = 0.2;
-        const valorSacado = valor - (taxa * valor);
-        if(this._saldo >= valorSacado){
-            this._saldo -= valorSacado;
-            return valorSacado;
-        }
+    sacar(valor, taxa){
+        taxa = 0.2;
+        super._sacar(valor, taxa);
     }
 
 }
