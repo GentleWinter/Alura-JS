@@ -14,8 +14,10 @@ const contaCorrenteRicardo = new ContaCorrente();
 const contaCorrenteAmara = new ContaCorrente();
 
 contaCorrenteRicardo.agencia = 1001;
+contaCorrenteRicardo.cliente = cliente1;
 
 contaCorrenteAmara.agencia = 1001;
+contaCorrenteAmara.cliente = cliente2;
 
 
 contaCorrenteAmara.depositar(500);
