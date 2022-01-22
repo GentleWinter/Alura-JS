@@ -1,23 +1,8 @@
-export class ContaCorrente{
-    static numeroDeContas = 0;
-    agencia;
-    _cliente;
-
-    set Cliente(novoValor){
-        if(novoValor instanceof Cliente){
-            this._cliente = novoValor;
-        }
-    }
-
-    get cliente(){
-        return this._cliente;
-    }
-
+export class ContaPoupanca{
     constructor(agencia, cliente){
         this.agencia = agencia;
         this._cliente = cliente;
         this._saldo = 0;
-        ContaCorrente.numeroDeContas += 1;
     }
 
     sacar(valor){
@@ -41,4 +26,3 @@ export class ContaCorrente{
         conta.depositar(valorSacado);
     }
 }
-
