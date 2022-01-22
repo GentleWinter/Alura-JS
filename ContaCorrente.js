@@ -8,6 +8,13 @@ export class ContaCorrente{
         }
     }
 
+    get cliente(){
+        return this._cliente;
+    }
+
+    get saldo(){
+        return this._saldo;
+    }
 
     _saldo = 0;
 
