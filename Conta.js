@@ -29,19 +29,18 @@ export class Conta{
             this._saldo -= valorSacado * taxa;
             return valorSacado;
         }
+        return 0;
     }
 
     depositar(valor){
         if(valor <= 0){
             return;
         }
-        if(valor > 0){
-            this._saldo += valor;
-        }
+        this._saldo += valor;
     }
 
     transferir(valor, conta){
-        const valorTransferido = this.sacar(valor);
-        conta.depositar(valorTransferido);
+        const valorSacado = this.sacar(valor);
+        conta.depositar(valor);
     }
 }

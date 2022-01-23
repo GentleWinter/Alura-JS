@@ -9,7 +9,7 @@ export class ContaPoupanca extends Conta{
 
     sacar(valor, taxa){
         taxa = 0.2;
-        super._sacar(valor, taxa);
+        return super._sacar(valor, taxa);
     }
 
 }
