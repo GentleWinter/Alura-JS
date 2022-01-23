@@ -16,6 +16,10 @@ export class Conta{
     }
 
     constructor(agencia, cliente){
+        if(this.constructor == Conta){
+            console.log('Conta é uma classe abstrata sem uso, não instancie objetos a partir dela');
+            return;
+        }
         this.agencia = agencia;
         this._cliente = cliente;
         this._saldo = 0;

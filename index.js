@@ -5,7 +5,7 @@ import { ContaPoupanca } from "./ContaPoupanca.js";
 
 const cliente1 = new Cliente('Ricardo', 12345678990);
 const cliente2 = new Cliente('Amara', 12345678999);
-const cliente3 = new Cliente(`Rodrigo`, 14545678999)
+const cliente3 = new Cliente(`Rodrigo`, 14545678999);
 
 const contaCorrenteRicardo = new ContaCorrente(1001, cliente1);
 const contaCorrenteAmara = new ContaCorrente(1001, cliente2);
