@@ -25,6 +25,10 @@ export class Conta{
         Conta.numeroDeContas += 1;
     }
 
+    sacar(valor){
+        throw new Error('Sacar é abstrata e deve ser sobrescrita na classe _sacar.');
+    }
+
     _sacar(valor, taxa){
         taxa = 1;
         const valorSacado = valor;
